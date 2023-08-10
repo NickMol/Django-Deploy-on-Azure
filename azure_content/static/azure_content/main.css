@@ -1,0 +1,360 @@
+#main{
+    margin-left: 200px;
+    transition: margin-left 0.5s;
+    z-index: 999988;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  
+.Logo{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+
+.titelbalk{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #2D323E;
+  color: #ffffff;
+
+}
+
+.icon{
+  margin-right: 5px;
+}
+
+.titel{
+  width: 62%;
+  margin-left: 2%;
+  margin-top: 8px;
+  height: 100%;
+  align-items: center;
+}
+ 
+.extra{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+  width: 35%;
+  height: 100%;
+}
+
+.bevestigenknop2{
+  background-color: #3B5998 !important;
+  border-radius: 5px;
+  margin-bottom:1px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  height: 22px;
+}
+
+.bevestigenknop2:hover{
+  background-color: grey !important;
+}
+
+
+.iconcolor{
+  color: #3B5998;
+}
+
+.iconcolor:hover{
+  color: #01143d;
+}
+
+.open-slide{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 63px;
+    background-color: #3b5998 ;
+    overflow: hidden;
+    z-index: 999999;
+    box-shadow: -4px 5px 13px -1px rgba(0,0,0,0.32);
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a{
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  
+  }
+  #openlogo{
+    color: #3b5998 ;
+    margin-top: 12px;
+    margin-left: 7px;
+    width: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .logo{
+  
+    width: 157px;
+    height: 52px;
+    z-index: 999999;
+  }
+  .navbar ul {
+   
+    list-style: none;
+  }
+  #logozoom{
+    font: 25px;
+  }
+  .navbar a #logozoom:hover{
+    color: rgb(32, 0, 83);
+  }
+  
+  .side-nav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1) ;
+    overflow-x:hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .active{
+    color: #3b5998 !important;
+    background-color: rgb(229, 231, 231);
+  }
+  
+  .side-nav .menuitem{
+    padding: 10px 10px 10px 30px ;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: 500 ;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+  }
+  
+  .navicon{
+    width: 30px;
+  }
+  
+  .side-nav .menuitem:hover{
+    text-decoration: none;
+    color: #3b5998;
+    background-color: rgb(229, 231, 231);
+  }
+  
+  .secondheader{
+    background-color: grey !important;
+  }
+  
+  .moduleblok {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    color: #f2f2f2;
+    height: 25px;
+    transition: 0.5s;
+  }
+  
+  .module{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    background-color: #3b5998;
+  }
+  
+  .sluiten{
+    width: 20%;
+    height: 100%;
+    background-color: #a7a5a5;
+    color: rgb(17, 15, 15);
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .sluiten:hover{
+    background-color: #570000;
+    color: red;
+    text-decoration: none;
+  }
+  
+  
+.dropbtn{
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    z-index: 999999;
+    background-color: #3B5998;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: -4px 5px 13px -1px rgba(0,0,0,0.32);
+    padding: 5px;
+  }
+  
+  .dropbtn:hover{
+    background-color: #102044;
+  }
+
+  
+.beheertable {
+  border-collapse: collapse;
+  width: 98%;
+  margin:0px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+  margin-left: 1%;
+  margin-left: 1%;
+} 
+
+.beheertable th,
+.beheertable td {
+  padding: 4px 3px;
+  text-align: left;
+}
+
+.beheertable td {
+  font-size:12px;
+}
+
+.beheertable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.beheertable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.beheertable tbody tr:last-of-type {
+  border-bottom: 2px solid #3d70b2;
+}
+
+.beheertable th {
+  background-color: #2D323E;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  .holder{
+    display: flex;
+    flex-direction: column;
+    width:98%;
+    margin-top: 10px;
+  }
+
+
+.subtitel2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;  
+}
+
+.subtitel2{
+  justify-content: space-between;
+}
+
+.content{
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 1%;
+
+}
+
+.factbox2{
+  display: flex;
+  min-width: 250px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  flex-direction: column;
+  text-align: center;
+  width: 22%;
+  color: #333;
+  box-shadow: -4px 5px 13px -1px rgba(0,0,0,0.32);
+}
+
+.factbox-title{
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.boxenholder2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.factbox-fact{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.shadowholder{
+display: flex;
+margin-top: 10px;
+border-radius: 5px;
+width: 100%;
+flex-direction: column;
+box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+
+
+}
+
+.shadowholder2{
+display: flex;
+margin-top: 10px;
+border-radius: 5px;
+width: 100%;
+flex-direction: column;
+box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+
+
+}

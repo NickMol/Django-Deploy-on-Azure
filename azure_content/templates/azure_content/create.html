@@ -1,0 +1,37 @@
+{% extends "azure_content/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content%}
+
+  <div class="holder"> 
+        <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="titelbalk"> 
+            <div class="titel">
+                {% if "edit" not in request.path%}
+                    <i class="fas fa-file-invoice icon"></i>  New entry
+                {%else%}
+                <i class="fas fa-file-invoice icon"></i>  Edit entry
+                {%endif%}
+            </div>
+            <div class="extra">
+                <button type="submit" class="bevestigenknop2"> <i class="fas fa-check icon"></i>Confirm</button>
+            </div>
+        
+        </div>
+        
+        <div class="shadowholder">
+            <div class="subtitel2"> 
+                <div> <i class="fas fa-sticky-note icon"></i> Create a new project </div>
+            </div>
+                <div class="content mb-3"> 
+                
+                        {{ form.name|as_crispy_field }}
+                        {{ form.description|as_crispy_field }}
+                </div>
+        </div>
+    </form>
+    </div>
+
+
+{% endblock content%}

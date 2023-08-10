@@ -1,0 +1,88 @@
+{% extends "azure_content/base.html" %}
+{% load static %}
+{% block content%}
+
+  <div class="holder"> 
+       <form method="GET">
+        <div class="boxenholder2">
+
+             <div class="factbox2">
+                 <div class="factbox-title"> 
+                    Add entry
+                </div>
+                <div class="factbox-fact"> 
+                    <a class="iconcolor" href="{% url 'create'%}"> <i class="fas fa-plus-circle"></i> </a>
+                </div>
+            </div>
+
+            <div class="factbox2">
+                <div class="factbox-title"> 
+                    <i class="fas fa-project-diagram mr-2"></i> # entries
+                </div>
+                <div class="factbox-fact"> 
+                    {{ project_list|length }}
+                </div>
+            </div>
+
+            <div class="factbox2">
+                <div class="factbox-title"> 
+                    <i class="fas fa-chart-line mr-2"></i> Channel
+                </div>
+                <div class="factbox-fact"> 
+                 CBI Analytics
+                </div>
+            </div>
+
+
+            <div class="factbox2">
+                 <div class="factbox-title"> 
+                   <i class="fas fa-times-circle mr-2"></i> Go to the about page
+                </div>
+                <div class="factbox-fact"> 
+                    <a href="{% url 'about'%}"> <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+        <div class="shadowholder">
+            <div class="subtitel2"> 
+                <div> <i class="fas fa-sticky-note mr-2"></i> My data </div>
+            </div>
+                <div class="content mb-3"> 
+                    <table id="example5" class="beheertable" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Created at</th>
+                                <th>Edited at</th>
+                                <th>Delete</th>
+                                
+                                
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                             {%for a in project_list%}
+                                <tr>
+                                    <td><a href="{% url 'edit' a.id%}">{{a.name}}</a> </td>
+                                    <td> {{a.description}} </td>
+                                    <td> {{a.created_at|date:'d-m-Y H:i'}}</td>
+                                    <td> {{a.edited_at|date:'d-m-Y H:i'}}</td>
+                                    <td> <a href="{% url 'delete' a.id%}">delete</a></td>
+                                </tr>
+                             {%endfor%}
+
+                        <tbody>
+                        
+                        
+                    </table>
+                </div>
+        </div>
+    </div>
+
+
+{% endblock content%}
