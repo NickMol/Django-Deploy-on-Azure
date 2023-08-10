@@ -9,4 +9,4 @@ class ProjectForm(forms.ModelForm):
     description = forms.CharField(label="Description", required=False,help_text="", widget=forms.Textarea(attrs={'rows': 10, 'cols': 85}))
     class Meta: 
         model = Project
-        fields = ['name', 'description']
+        fields = ['name', 'description']  
